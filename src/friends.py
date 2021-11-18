@@ -20,5 +20,16 @@ def total_money(list):
     for money in list:
         monies += money["monies"]
     return monies
+
+def lend_money(person1, person2, amount):
+    person1_money = person1["monies"]
+    person2_money = person2["monies"]
+    person1_money -= amount
+    person2_money += amount
+    person1["monies"] = person1_money
+    person2["monies"] = person2_money
+    
+
+
     
 
